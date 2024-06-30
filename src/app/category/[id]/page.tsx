@@ -20,7 +20,7 @@ const sportsArticles = [
         link: "article/1"
       },
   {
-    title: "fuck off",
+    title: "somethinng ",
     description: "The championship match ended with a thrilling finish, keeping fans on the edge of their seats.",
     image: "https://image.maxpreps.io/editorial/article/7/c/6/7c6f3101-c840-4ca2-b538-ac8340ad2fd0/842376e6-f2bd-ed11-80d3-0a9bf6d97784_original.jpg",
     author: "John Doe",
@@ -28,7 +28,7 @@ const sportsArticles = [
     link: "article/1"
   },
   {
-    title: "serious",
+    title: "welcome",
     description: "A key player has been ruled out for the season due to injury, impacting the team's strategy.",
     image: "https://dims.apnews.com/dims4/default/b543bcb/2147483647/strip/true/crop/4189x2792+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F07%2F7a%2Fb3e9d24fb769b0097a5c522174e0%2F5cd3c74e38f445598e5eb6cf3368fdf8",
     author: "Jane Smith",
@@ -36,7 +36,7 @@ const sportsArticles = [
     link: "article/1"
   },
   {
-    title: "Thrilling Finish in the Championship",
+    title: "goodnbdgdh",
     description: "The championship match ended with a thrilling finish, keeping fans on the edge of their seats.",
     image: "https://image.maxpreps.io/editorial/article/7/c/6/7c6f3101-c840-4ca2-b538-ac8340ad2fd0/842376e6-f2bd-ed11-80d3-0a9bf6d97784_original.jpg",
     author: "John Doe",
