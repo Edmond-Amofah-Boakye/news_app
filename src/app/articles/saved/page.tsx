@@ -20,7 +20,7 @@ const savedArticles = [
     link: "article/1"
   },
   {
-    title: "elsen",
+    title: "It is fineds",
     description: "The championship match ended with a thrilling finish, keeping fans on the edge of their seats.",
     image: "https://image.maxpreps.io/editorial/article/7/c/6/7c6f3101-c840-4ca2-b538-ac8340ad2fd0/842376e6-f2bd-ed11-80d3-0a9bf6d97784_original.jpg",
     author: "John Doe",
