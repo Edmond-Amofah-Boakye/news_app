@@ -11,7 +11,7 @@ const forgotpassword = () => {
   const [loading, setLoading] = useState<boolean>(false)
 
   const ResetSchema = Yup.object().shape({
-    email: Yup.string().email("please provide valid email").required("email is required"),
+    email: Yup.string().email("please provide valid email").required("emailsddtsg is required"),
   })
 
   const formik = useFormik({
