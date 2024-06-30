@@ -141,8 +141,7 @@ const Signup = () => {
           </div>
         </div>
         <div className="mt-5">
-          <p className="text-[14px] text-center mb-4">
-            Or Create Account using social media
+          <p className="text-[14px] texmedia social
           </p>
           <div className="flex justify-center items-center gap-2">
             <FcGoogle className="w-10 h-5 cursor-pointer" onClick={()=> signIn("google")}/>
