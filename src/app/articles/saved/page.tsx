@@ -12,7 +12,7 @@ import Link from 'next/link';
 // Dummy data for saved articles
 const savedArticles = [
   {
-    title: "Eddy won instead of messi bad notss",
+    title: "Messi wins 8th Ballon D'or",
     description: "Messi has won his 8th Ballon D'or award, making history once again.",
     image: "https://www.aljazeera.com/wp-content/uploads/2021/11/2021-11-29T211250Z_704190787_UP1EHBT1MXC65_RTRMADP_3_SOCCER-BALLON.jpg?resize=1800%2C1800",
     author: "Jane Smith",
@@ -20,7 +20,7 @@ const savedArticles = [
     link: "article/1"
   },
   {
-    title: "Thrilling Finish in the Championship",
+    title: "Championship match ended with a thrilling finish",
     description: "The championship match ended with a thrilling finish, keeping fans on the edge of their seats.",
     image: "https://image.maxpreps.io/editorial/article/7/c/6/7c6f3101-c840-4ca2-b538-ac8340ad2fd0/842376e6-f2bd-ed11-80d3-0a9bf6d97784_original.jpg",
     author: "John Doe",
@@ -28,7 +28,7 @@ const savedArticles = [
     link: "article/1"
   },
   {
-    title: "Injury Update: Star Player Out for Season",
+    title: "A key player has been ruled out for the season due to injury",
     description: "A key player has been ruled out for the season due to injury, impacting the team's strategy.",
     image: "https://dims.apnews.com/dims4/default/b543bcb/2147483647/strip/true/crop/4189x2792+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F07%2F7a%2Fb3e9d24fb769b0097a5c522174e0%2F5cd3c74e38f445598e5eb6cf3368fdf8",
     author: "Jane Smith",
