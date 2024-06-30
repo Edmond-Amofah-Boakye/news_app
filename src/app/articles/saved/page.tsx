@@ -12,7 +12,7 @@ import Link from 'next/link';
 // Dummy data for saved articles
 const savedArticles = [
   {
-    title: "Eddy won instead of messi",
+    title: "Eddy won instead of messi bad notss",
     description: "Messi has won his 8th Ballon D'or award, making history once again.",
     image: "https://www.aljazeera.com/wp-content/uploads/2021/11/2021-11-29T211250Z_704190787_UP1EHBT1MXC65_RTRMADP_3_SOCCER-BALLON.jpg?resize=1800%2C1800",
     author: "Jane Smith",

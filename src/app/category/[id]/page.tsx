@@ -12,7 +12,7 @@ import Link from 'next/link';
 // Dummy data for sports articles
 const sportsArticles = [
     {
-        title: "Messi Won 8th Ballon D'or",
+        title: "nhhshsr",
         description: "A key player has been ruled out for the season due to injury, impacting the team's strategy.",
         image: "https://www.aljazeera.com/wp-content/uploads/2021/11/2021-11-29T211250Z_704190787_UP1EHBT1MXC65_RTRMADP_3_SOCCER-BALLON.jpg?resize=1800%2C1800",
         author: "Jane Smith",
@@ -20,7 +20,7 @@ const sportsArticles = [
         link: "article/1"
       },
   {
-    title: "Thrilling Finish in the Championship",
+    title: "Tsgghsjjs",
     description: "The championship match ended with a thrilling finish, keeping fans on the edge of their seats.",
     image: "https://image.maxpreps.io/editorial/article/7/c/6/7c6f3101-c840-4ca2-b538-ac8340ad2fd0/842376e6-f2bd-ed11-80d3-0a9bf6d97784_original.jpg",
     author: "John Doe",
