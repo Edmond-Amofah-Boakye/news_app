@@ -12,8 +12,10 @@ import Link from "next/link";
 import { HiUser } from "react-icons/hi2";
 import { signIn } from "next-auth/react";
 import { BsGithub } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 const login = () => {
+  const router = useRouter()
   const [loading, setLoading] = useState<boolean>(false);
   const LoginSchema = Yup.object().shape({
     email: Yup.string()
@@ -29,13 +31,17 @@ const login = () => {
     },
     validationSchema: LoginSchema,
     onSubmit: async (values) => {
+      const { email, password } = values
       setLoading(true);
       try {
-        await new Promise((resolve) =>
-          setTimeout(() => {
-            resolve(console.log(values));
-          }, 1000)
-        );
+        const response = await signIn("credentials", {email, password, redirect: false})
+        console.log(response);
+        if(!response?.error){
+          router.back()
+        }
+         if(!response?.ok){
+          throw new Error("Something unusual happened")
+         }
       } catch (error) {
         console.log(error);
       } finally {
@@ -43,6 +49,10 @@ const login = () => {
       }
     },
   });
+
+  const handleSocialLogin = async(provider: string, redirectUrl: string) => {
+    await signIn(provider, {callbackUrl: redirectUrl})
+  }
 
   return (
     <div className="bg-white w-[30%] p-6 mt-[60px] mb-0 mx-auto rounded-sm">
@@ -130,9 +140,9 @@ const login = () => {
             Or Login using social media
           </p>
           <div className="flex justify-center items-center gap-2">
-            <FcGoogle className="w-10 h-5 cursor-pointer" onClick={()=> signIn("google")}/>
-            <BsGithub className="text-black w-10 h-5 cursor-pointer" onClick={()=> signIn("github")} />
-            <FaTwitter className="text-blue-400 w-10 h-5 cursor-pointer" onClick={()=> signIn("twitter")} />
+            <FcGoogle className="w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("google", "/")}/>
+            <BsGithub className="text-black w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("github", "/")} />
+            <FaTwitter className="text-blue-400 w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("twitter", "/")} />
           </div>
         </div>
       </form>
