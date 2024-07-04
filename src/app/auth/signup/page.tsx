@@ -52,6 +52,10 @@ const Signup = () => {
     },
   });
 
+  const handleSocialLogin = async (provider: string, redirectUrl: string) => {
+    await signIn(provider, {callbackUrl: redirectUrl})
+  }
+
   return (
     <div className="bg-white w-[30%] p-6 mt-[60px] mb-0 mx-auto rounded-sm">
       <form onSubmit={formik.handleSubmit}>
@@ -145,9 +149,9 @@ const Signup = () => {
             Or Create Account using social media
           </p>
           <div className="flex justify-center items-center gap-2">
-            <FcGoogle className="w-10 h-5 cursor-pointer" onClick={()=> signIn("google")}/>
-            <BsGithub className="text-black w-10 h-5 cursor-pointer" onClick={()=> signIn("github")}/>
-            <FaTwitter className="text-blue-400 w-10 h-5 cursor-pointer" onClick={()=> signIn("twitter")}/>
+            <FcGoogle className="w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("google", "/")}/>
+            <BsGithub className="text-black w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("github", "/")} />
+            <FaTwitter className="text-blue-400 w-10 h-5 cursor-pointer" onClick={()=> handleSocialLogin("twitter", "/")} />
           </div>
         </div>
       </form>
