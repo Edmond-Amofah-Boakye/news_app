@@ -38,6 +38,7 @@ export class FileUpload {
     return filesKeys.join(",");
   }
 
+  //delete a single file in s3
   async deleteFile(fileKey: string) {
     const params = {
       Bucket: process.env.AWS_BUCKET_NAME,
